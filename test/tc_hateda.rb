@@ -1,3 +1,4 @@
+#-*-encoding: utf-8-*-
 require "test/unit"
 
 require_relative "../lib/hateda"
@@ -8,9 +9,14 @@ class TestHateDaEntryList < Test::Unit::TestCase
   end
   
   def test_entry_with_page_range
-    assert_equal(258+86, @hd.get.size)
+    assert_equal(260+86, @hd.get.size)
     assert_equal(60, @hd.get(2).size)
-    assert_equal(179, @hd.get(1..3).size)
+    assert_equal(180, @hd.get(1..3).size)
+  end
+
+  def test_entry_with_word
+    assert_equal(4, @hd.get(1..-1, "tiger").size)
+    assert_equal(11, @hd.get(1..-1, "株価").size)
   end
 
   def test_entry_with_filter
@@ -19,12 +25,12 @@ class TestHateDaEntryList < Test::Unit::TestCase
     list1.each { |k,(t,d)| assert_match(/ruby/i, t) }
     list2.each { |k,(t,d)| assert(d.before?('2007-1-1'), "Failure message.") }
   end
-
+  
   def test_print_list
     list = @hd.get(2) { |url, title, date| title =~ /ruby/i }
     @hd.print_list(list).each { |ent| assert_match(/ruby/i, ent) }
   end
-
+  
   def test_print_list_option
     list = @hd.get(1)
     w_bm_day  = @hd.print_list(list)

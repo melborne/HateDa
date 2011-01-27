@@ -1,11 +1,12 @@
+#-*-encoding: utf-8-*-
 class HateDa::EntryList
   def initialize(username)
     @user = username
     @pages = {}
   end
 
-  def get(pages=1..-1, &blk)
-    htmls = parse_pages build_page_range(pages)
+  def get(pages=1..-1, word='', &blk)
+    htmls = parse_pages build_page_range(pages), word
     extract_entries(htmls, &blk)
   end
 
@@ -50,15 +51,17 @@ class HateDa::EntryList
     end
   end
 
-  def URL(username, page=0)
-    "http://d.hatena.ne.jp/#{username}/archive?of=#{(page-1)*50}"
+  def URL(username, page=0, word='')
+    word = CGI.escape(word.encode "EUC-JP") if word
+    "http://d.hatena.ne.jp/#{username}/archive?word=#{word}&of=#{(page-1)*50}"
   end
 
-  def parse_pages(pages)
+  def parse_pages(pages, word)
     q = {}
+    @pages.clear unless word.nil?
     # TODO: be thread
     pages.each do |page|
-      q[page] = @pages[page] ||= Nokogiri::HTML(open URL(@user, page))
+      q[page] = @pages[page] ||= Nokogiri::HTML(open URL(@user, page, word))
       break if last_page?(q[page])
     end
     q.sort_by(&:first).map(&:last)
