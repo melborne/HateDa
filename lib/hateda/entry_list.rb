@@ -61,7 +61,7 @@ class HateDa::EntryList
       q[page] = @pages[page] ||= Nokogiri::HTML(open URL(@user, page))
       break if last_page?(q[page])
     end
-    q.sort_by { |page,_| page }.map { |_,html| html }
+    q.sort_by { |page,_| page }.map(&:last)
   rescue OpenURI::HTTPError => e
     STDERR.puts "maybe Account name is wrong.:#{e}"
     exit
