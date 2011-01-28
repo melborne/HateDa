@@ -5,8 +5,9 @@ class HateDa::EntryList
     @pages = {}
   end
 
-  def get(pages=1..-1, word='', &blk)
-    htmls = parse_pages build_page_range(pages), word
+  def get(opt={}, &blk)
+    opt = {:pages => 1..-1, :word => ''}.update(opt)
+    htmls = parse_pages build_page_range(opt[:pages]), opt[:word]
     extract_entries(htmls, &blk)
   end
 

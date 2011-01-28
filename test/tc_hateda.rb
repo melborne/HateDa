@@ -10,29 +10,29 @@ class TestHateDaEntryList < Test::Unit::TestCase
   
   def test_entry_with_page_range
     assert_equal(260+86, @hd.get.size)
-    assert_equal(60, @hd.get(2).size)
-    assert_equal(180, @hd.get(1..3).size)
+    assert_equal(60, @hd.get(:pages => 2).size)
+    assert_equal(180, @hd.get(:pages => 1..3).size)
   end
 
   def test_entry_with_word
-    assert_equal(4, @hd.get(1..-1, "tiger").size)
-    assert_equal(11, @hd.get(1..-1, "株価").size)
+    assert_equal(4, @hd.get(:word => "tiger").size)
+    assert_equal(11, @hd.get(:word => "株価").size)
   end
 
   def test_entry_with_filter
-    list1 = @hd.get(1) { |url, title, date| title =~ /ruby/i }
-    list2 = @hd.get(3..20) { |url, title, date| date.before?('2007-1-1') }
+    list1 = @hd.get(:pages => 1) { |url, title, date| title =~ /ruby/i }
+    list2 = @hd.get(:pages => 3..20) { |url, title, date| date.before?('2007-1-1') }
     list1.each { |k,(t,d)| assert_match(/ruby/i, t) }
     list2.each { |k,(t,d)| assert(d.before?('2007-1-1'), "Failure message.") }
   end
   
   def test_print_list
-    list = @hd.get(2) { |url, title, date| title =~ /ruby/i }
+    list = @hd.get(:pages => 2) { |url, title, date| title =~ /ruby/i }
     @hd.print_list(list).each { |ent| assert_match(/ruby/i, ent) }
   end
   
   def test_print_list_option
-    list = @hd.get(1)
+    list = @hd.get(:pages => 1)
     w_bm_day  = @hd.print_list(list)
     wo_bm_day = @hd.print_list(list, :bookmark => false, :day => false)
     wo_bm     = @hd.print_list(list, :bookmark => false)
