@@ -34,8 +34,8 @@ class TestHateDaEntryList < Test::Unit::TestCase
   def test_print_list_option
     list = @hd.get(1)
     w_bm_day  = @hd.print_list(list)
-    wo_bm_day = @hd.print_list(list, false, false)
-    wo_bm     = @hd.print_list(list, false)
+    wo_bm_day = @hd.print_list(list, :bookmark => false, :day => false)
+    wo_bm     = @hd.print_list(list, :bookmark => false)
     assert_match(/:bookmark/, w_bm_day[1])
     assert_match(/\d{4}-\d{2}-\d{2}/, w_bm_day[1])
     assert_no_match(/\d{4}-\d{2}-\d{2}/, wo_bm_day[1])

@@ -10,13 +10,14 @@ class HateDa::EntryList
     extract_entries(htmls, &blk)
   end
 
-  def print_list(list, bookmark=true, day=true, lineno=true)
+  def print_list(list, opt={})
     raise "you get no entries or need to call get first." if list.empty? 
+    opt = {bookmark:true, day:true, lineno:true}.update(opt)
     list.map do |url, (title, date)|
       form = ->d{ "[#{url}:title=#{title}#{d}]" }
-      out = day ? form["(#{date})"] : form[nil]
-      bookmark ? out += "[#{url}:bookmark]" : out
-      lineno ? "+" + out : out
+      out = opt[:day] ? form["(#{date})"] : form[nil]
+      opt[:bookmark] ? out += "[#{url}:bookmark]" : out
+      opt[:lineno] ? "+" + out : out
     end
   end
 

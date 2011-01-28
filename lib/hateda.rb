@@ -12,6 +12,6 @@ if __FILE__ == $0
   list = hd.get(1..-1, '任天堂') do |url, title, date|
     date.between?("2007-1-1", "2009-1-1")
   end
-  puts hd.print_list(list)
+  puts hd.print_list(list, :bookmark => false)
 end
 
