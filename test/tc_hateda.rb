@@ -5,7 +5,7 @@ require_relative "../lib/hateda"
 
 class TestHateDaEntryList < Test::Unit::TestCase
   def setup
-    @hd = HateDa::EntryList.new(:keyesberry)
+    @hd = HateDa::EntryList.new('your account')
   end
   
   def test_entry_with_page_range
