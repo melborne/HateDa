@@ -29,8 +29,9 @@ class HateDa::EntryList
       html.search('.archive-date').each do |elm|
         date = Date.parse(elm.child.text)
         elm.css('li').each do |entry|
-          url = entry.child.attributes['href'].value
-          title = entry.child.child.content
+          target = entry.css('a').detect { |e| e.attributes.size == 1 }
+          url = target.attributes['href'].value rescue "http://localhost"
+          title = target.text rescue 'no title'
           q[url] = [title, date]
         end
       end

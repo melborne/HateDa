@@ -9,7 +9,7 @@ class TestHateDaEntryList < Test::Unit::TestCase
   end
   
   def test_entry_with_page_range
-    assert_equal(260+86, @hd.get.size)
+    assert_equal(262+86, @hd.get.size)
     assert_equal(60, @hd.get(:pages => 2).size)
     assert_equal(180, @hd.get(:pages => 1..3).size)
   end
