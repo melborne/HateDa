@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml"
+      xml:lang="ja"
+      lang="ja">
+<head>
+<script type="text/javascript">
+var __rendering_time = (new Date).getTime();
+</script>
+<title>はてなブックマーク - 新着ブックマーク - d:id:keyesberry</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="msapplication-navbutton-color" content="#2C6EBD" />
+<meta name="msapplication-task" content="name=はてなブックマーク; action-uri=/; icon-uri=/images/icons/bookmark.ico" />
+<meta name="msapplication-task" content="name=マイブックマーク; action-uri=/my; icon-uri=/images/icons/my-bookmark.ico" />
+<meta name="msapplication-task" content="name=お気に入りのブックマーク; action-uri=/my/favorite; icon-uri=/images/icons/favorite-bookmark.ico" />
+<meta name="msapplication-task" content="name=人気エントリー; action-uri=/hotentry; icon-uri=/images/icons/hotentry.ico" />
+<link rel="shortcut icon" type="image/x-icon" href="http://b.hatena.ne.jp/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" title="はてなブックマーク検索" href="/opensearch.xml" />
+<script type="text/javascript" src="http://cdn.www.st-hatena.com/js/header.ja.js" charset="utf-8"></script>
+<link type="text/css" rel="stylesheet" href="http://cdn.www.st-hatena.com/css/hatena/header.css" />
+<link rel="stylesheet" href="http://cdn-ak.b.st-hatena.com/css/common.css?06e1de665c53a8ff7a502059f98157c74449d0fa" type="text/css" media="all" />
+<link rel="stylesheet" href="http://cdn-ak.b.st-hatena.com/css/global.css?a2fff59237288e7712281afcd4221fb654b1bfb5" type="text/css" media="all" />
+<link rel="stylesheet" href="http://cdn-ak.b.st-hatena.com/css/entrylist.css?699dab0125e467015582bcbf7950744046305b43" type="text/css" media="all" />
+<link rel="next" href="/bookmarklist?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F&amp;of=25" title="次のページ" />
+<script type="text/javascript" src="http://cdn-ak.b.st-hatena.com/js/Ten.js?a310f2c3d363bedc89685a675d1a35d6ec6fa6fa"></script>
+<link rel="alternate" type="application/rss+xml" title="RSS" href="/bookmarklist.rss?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F" />
+<script type="text/javascript" charset="utf-8" src="http://cdn-ak.b.st-hatena.com/js/Hatena/Bookmark.js?06e1de665c53a8ff7a502059f98157c74449d0fa"></script>
+<script type="text/javascript">
+// <![CDATA[
+  Hatena.Bookmark.Browsing.start(1312978327);
+
+
+
+      Hatena.Bookmark.user = new Hatena.Bookmark.User('keyesberry', '2331b15afca63ba3273ca63a53f789cfc3fa9bea', {
+          linktarget: '_blank',
+          infoversion: 66
+      });
+        Hatena.Bookmark.user.tagsuggest = true;
+
+  Hatena.Bookmark.entry = {};
+  Hatena.Bookmark.AfterHeader.addEventListener('onload', function() {
+    Hatena.Bookmark.navigator = new Hatena.Bookmark.Navigator([]);
+    var nav = new Hatena.Bookmark.Navigator.Global(Hatena.Bookmark.user);
+    nav.setInformationAd(0, '+3m');
+        if (!nav.infoAd || !nav.infoAd.shown) {
+            nav.setInformation([{"timestamp":1278686563,"url":"http://hatena.g.hatena.ne.jp/hatenabookmark/20100709/1278654058","title":"はてなブックマークの機能を一通りチュートリアル形式で学べる チュートリアル機能がリリース","info_id":"41"}]);
+        }
+  });
+
+  Hatena.Bookmark.Browsing.document.addEventListener('pageload', function() {
+    Hatena.Bookmark.navigator.setElementsBySelector(["ul.bookmarklist h3","div.pager:last-child a:last-child"]);
+    Hatena.Bookmark.navigator.registerEventListeners();
+    Hatena.Bookmark.LazyFavoriteLoader.getInstance().init();
+
+    Hatena.Bookmark.ShortURL.TweetInfoLoader.getInstance().init();
+    Hatena.Bookmark.ShortURL.ClickCounterLoader.getInstance().init();
+    Hatena.Bookmark.ShortURL.RetweetCounterLoader.getInstance().init();
+    Hatena.Bookmark.JumpList.setup();
+
+Hatena.Bookmark.UserNavigator.registerOnLoadBySelector('ul.comment');
+new Hatena.Bookmark.AutoPagerize('ul.bookmarklist', 'div.pager:last-child');
+
+    if (location.hash.length > 2) {
+        var hashTarget = document.getElementById(location.hash.substring(1));
+        if (hashTarget) {
+            if (Ten.DOM.loaded)
+                hashTarget.scrollIntoView();
+            window.scrollBy(0, -40);
+        }
+    }
+  });
+
+
+// ]]>
+</script>
+</head>
+<body id="hatena-bookmark-bookmarklist" class="fixed-header">
+    <div id="wrapper">
+
+        
+        
+        <div id="header">
+          <div id="header-body"><h1><a href="/" class="service-logo-container"><img id="logo" src="http://cdn-ak.b.st-hatena.com/images/logo-bookmark.gif" alt="Hatena::Bookmark" /></a></h1><div id="navigation"><form id="search" action="/search"><div><input type="text" id="searchtext" name="q" value="" /><input type="submit" src="http://cdn-ak.b.st-hatena.com/images/searchbutton.gif" id="searchbutton" value="" /></div></form><ul class="service-menu" id="header-navigation"><li><a href="/keyesberry/"><img src="http://www.st-hatena.com/users/ke/keyesberry/profile_s.gif" class="header-profile-icon" width="16" height="16" alt="keyesberry" /></a><a href="/keyesberry/">マイページ</a></li><li><a href="/keyesberry/favorite">お気に入り</a></li><li><a href="/keyesberry/add">追加</a></li><li><a href="/keyesberry/config">設定</a></li><noscript><li><a href="http://www.hatena.ne.jp/logout?location=http%3A%2F%2Fb.hatena.ne.jp%2Fbookmarklist%3Furl%3Dhttp%253A%252F%252Fd.hatena.ne.jp%252Fkeyesberry%252F%26of%3D0">ログアウト</a></li></noscript><li><a href="/help">ヘルプ</a></li><li class="header-username" id="header-username" title="利用中のサービス" data-name="keyesberry" data-rkm="PcBp3Q+9QY3AQGKDyQB11w"><span class="header-dropdown trigger" tabindex="0"><img src="http://cdn.www.st-hatena.com/images/header/usermenu-wh.png" alt="利用中のサービス" width="24" height="24" /></span><dl class="header-window" id="username-window"><!-- 利用中のサービス一覧 --></dl></li><li class="header-notify" id="header-notify" title="あなたへのお知らせ"><span class="header-dropdown trigger" tabindex="0"><img src="http://cdn.www.st-hatena.com/images/header/notify-wh.png" alt="あなたへのお知らせ" width="25" height="25" /><span class="notify-count"></span></span><div id="notify-window" class="header-window header-notify"><!-- あなたへのお知らせ --></div></li><li class="global-logo"><a href="http://www.hatena.ne.jp/"><img src="http://cdn.www.st-hatena.com/images/header/global-logo-wh.png" alt="Hatena" width="76" height="12" /></a></li></ul></div></div>
+        </div>
+        
+        
+        <div id="info-header"><span id="info-header-close-button">(閉じる)</span><p id="info-header-message"></p></div>
+        <div id="info-header-spacer"></div>
+        <script type="text/javascript">
+             Hatena.Bookmark.AfterHeader.init();
+        </script>
+        <div class="breadcrumbs"><a href="/" title="はてなブックマーク">はてなブックマーク</a> &gt; <a href="/bookmarklist?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F" title="新着ブックマーク">新着ブックマーク</a> &gt; d:id:keyesberry</div>
+        
+
+        <div id="container" class="nosidebar">
+<div id="main">
+    <div class="entrytitle">
+        <h2><span>d:id:keyesberry の新着ブックマーク</span></h2>
+        <form class="searchbox" action="/bookmarklist" method="get">
+        <div class="searchbox">
+          <input type="hidden" name="sort" value="" />
+          <input class="inputtext" type="text" name="url" value="http://d.hatena.ne.jp/keyesberry/" />
+          <input class="inputbutton" type="submit" value="URLで絞り込み" />
+        </div>
+      </form>
+        <div class="submenu">
+            <div class="submenu-inner">
+                <div class="pager">
+                <a class="pager-next" href="/bookmarklist?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F&amp;of=25">次の25件&gt;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="curvebox-body">
+      <div id="ad" style="position: relative; z-index:990;">
+  <script type="text/javascript">
+    <!--
+    google_ad_channel = 'b_tag';
+    google_max_num_ads = '4';
+    google_encoding = 'utf8';
+    google_hints = '';
+    afc_format = 'rectangle';
+    // -->
+  </script>
+  <script type="text/javascript" src="/js/google_afc_lazy.js"></script>
+      </div>
+      <ul class="hotentry bookmarklist">
+        
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110810/p1" class="entry-link" title="+ (足す)から始めるRuby - hp12c">+ (足す)から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <a href="/entry/d.hatena.ne.jp/keyesberry/20110810/p1" title="はてなブックマーク - + (足す)から始めるRuby - hp12c (1ブックマーク)">1 user</a></li>
+        <li class="timestamp">2011/08/10</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110810%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110810/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/Watson/"><img src="http://cdn1.www.st-hatena.com/users/Wa/Watson/profile_s.gif" class="profile-image" alt="Watson" title="Watson" width="16" height="16" /></a>
+          <a class="username" href="/Watson/20110810#bookmark-54463522">Watson</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/Watson/ruby">ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/10</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110805/p1" class="entry-link" title="1から始めるRuby(その３) - hp12c">1から始めるRuby(その３) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <a href="/entry/d.hatena.ne.jp/keyesberry/20110805/p1" title="はてなブックマーク - 1から始めるRuby(その３) - hp12c (2ブックマーク)">2 users</a></li>
+        <li class="timestamp">2011/08/05</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110805%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110805/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/Watson/"><img src="http://cdn1.www.st-hatena.com/users/Wa/Watson/profile_s.gif" class="profile-image" alt="Watson" title="Watson" width="16" height="16" /></a>
+          <a class="username" href="/Watson/20110807#bookmark-53865810">Watson</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/Watson/ruby">ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/07</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/sonota88/"><img src="http://cdn2.www.st-hatena.com/users/so/sonota88/profile_s.gif" class="profile-image" alt="sonota88" title="sonota88" width="16" height="16" /></a>
+          <a class="username" href="/sonota88/20110806#bookmark-52614314">sonota88</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/sonota88/Ruby">Ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/06</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110603/p1" class="entry-link" title="SinatraはDSLなんかじゃない、Ruby偽装を使ったマインドコントロールだ！ - hp12c">SinatraはDSLなんかじゃない、Ruby偽装を使ったマインドコントロール...</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+          <a href="http://b.hatena.ne.jp/t/sinatra" rel="tag" class="tag">sinatra</a>
+          <a href="http://b.hatena.ne.jp/t/dsl" rel="tag" class="tag">dsl</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/irb" rel="tag" class="tag">irb</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110603/p1" title="はてなブックマーク - SinatraはDSLなんかじゃない、Ruby偽装を使ったマインドコントロールだ！ - hp12c (59ブックマーク)">59 users</a></strong></li>
+        <li class="timestamp">2011/06/03</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110603%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110603/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/tomiacannondale/"><img src="http://cdn1.www.st-hatena.com/users/to/tomiacannondale/profile_s.gif" class="profile-image" alt="tomiacannondale" title="tomiacannondale" width="16" height="16" /></a>
+          <a class="username" href="/tomiacannondale/20110805#bookmark-45287378">tomiacannondale</a>
+          <span class="tags"></span>
+          <span class="comment">ruby</span>
+          <span class="timestamp">2011/08/05</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20101107/p1" class="entry-link" title="RubyでANSIカラーシーケンスを学ぼう！ - hp12c">RubyでANSIカラーシーケンスを学ぼう！ - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+          <a href="http://b.hatena.ne.jp/t/terminal" rel="tag" class="tag">terminal</a>
+          <a href="http://b.hatena.ne.jp/t/color" rel="tag" class="tag">color</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+          <a href="http://b.hatena.ne.jp/t/tips" rel="tag" class="tag">tips</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20101107/p1" title="はてなブックマーク - RubyでANSIカラーシーケンスを学ぼう！ - hp12c (43ブックマーク)">43 users</a></strong></li>
+        <li class="timestamp">2010/11/07</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20101107%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20101107/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/takkaw/"><img src="http://cdn3.www.st-hatena.com/users/ta/takkaw/profile_s.gif" class="profile-image" alt="takkaw" title="takkaw" width="16" height="16" /></a>
+          <a class="username" href="/takkaw/20110803#bookmark-26308266">takkaw</a>
+          <span class="tags"></span>
+          <span class="comment">色々ありますねー</span>
+          <span class="timestamp">2011/08/03</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/jitsu102/"><img src="http://cdn1.www.st-hatena.com/users/ji/jitsu102/profile_s.gif" class="profile-image" alt="jitsu102" title="jitsu102" width="16" height="16" /></a>
+          <a class="username" href="/jitsu102/20110803#bookmark-52614314">jitsu102</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/jitsu102/ruby">ruby</a>, <a rel="tag" class="user-tag" href="/jitsu102/programming">programming</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/03</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/mog1394/"><img src="http://cdn2.www.st-hatena.com/users/mo/mog1394/profile_s.gif" class="profile-image" alt="mog1394" title="mog1394" width="16" height="16" /></a>
+          <a class="username" href="/mog1394/20110803#bookmark-52614314">mog1394</a>
+          <span class="tags"></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/03</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/akanuma2/"><img src="http://cdn4.www.st-hatena.com/users/ak/akanuma2/profile_s.gif" class="profile-image" alt="akanuma2" title="akanuma2" width="16" height="16" /></a>
+          <a class="username" href="/akanuma2/20110802#bookmark-52614314">akanuma2</a>
+          <span class="tags"></span>
+          <span class="comment">こんな僕にでもオブジェクト指向がわかる / 1から始めるRuby - hp12c</span>
+          <span class="timestamp">2011/08/02</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/toshiyuki83/"><img src="http://cdn3.www.st-hatena.com/users/to/toshiyuki83/profile_s.gif" class="profile-image" alt="toshiyuki83" title="toshiyuki83" width="16" height="16" /></a>
+          <a class="username" href="/toshiyuki83/20110802#bookmark-52614314">toshiyuki83</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/toshiyuki83/ruby">ruby</a></span>
+          <span class="comment">こんな僕にでもオブジェクト指向がわかる</span>
+          <span class="timestamp">2011/08/02</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110801/p1" class="entry-link" title="1から始めるRuby(その２) - hp12c">1から始めるRuby(その２) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <em><a href="/entry/d.hatena.ne.jp/keyesberry/20110801/p1" title="はてなブックマーク - 1から始めるRuby(その２) - hp12c (7ブックマーク)">7 users</a></em></li>
+        <li class="timestamp">2011/08/01</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110801%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110801/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/tacarzen/"><img src="http://cdn1.www.st-hatena.com/users/ta/tacarzen/profile_s.gif" class="profile-image" alt="tacarzen" title="tacarzen" width="16" height="16" /></a>
+          <a class="username" href="/tacarzen/20110802#bookmark-53274910">tacarzen</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/tacarzen/ruby">ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/02</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110801/p1" class="entry-link" title="1から始めるRuby(その２) - hp12c">1から始めるRuby(その２) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <em><a href="/entry/d.hatena.ne.jp/keyesberry/20110801/p1" title="はてなブックマーク - 1から始めるRuby(その２) - hp12c (7ブックマーク)">7 users</a></em></li>
+        <li class="timestamp">2011/08/01</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110801%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110801/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/kybernetes/"><img src="http://cdn4.www.st-hatena.com/users/ky/kybernetes/profile_s.gif" class="profile-image" alt="kybernetes" title="kybernetes" width="16" height="16" /></a>
+          <a class="username" href="/kybernetes/20110802#bookmark-53274910">kybernetes</a>
+          <span class="tags"></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/02</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110801/p1" class="entry-link" title="1から始めるRuby(その２) - hp12c">1から始めるRuby(その２) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <em><a href="/entry/d.hatena.ne.jp/keyesberry/20110801/p1" title="はてなブックマーク - 1から始めるRuby(その２) - hp12c (7ブックマーク)">7 users</a></em></li>
+        <li class="timestamp">2011/08/01</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110801%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110801/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/bsiyo/"><img src="http://cdn0.www.st-hatena.com/users/bs/bsiyo/profile_s.gif" class="profile-image" alt="bsiyo" title="bsiyo" width="16" height="16" /></a>
+          <a class="username" href="/bsiyo/20110802#bookmark-53274910">bsiyo</a>
+          <span class="tags"></span>
+          <span class="comment">Ruby: 1から始めるRuby(その２) - hp12c :</span>
+          <span class="timestamp">2011/08/02</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110801/p1" class="entry-link" title="1から始めるRuby(その２) - hp12c">1から始めるRuby(その２) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <em><a href="/entry/d.hatena.ne.jp/keyesberry/20110801/p1" title="はてなブックマーク - 1から始めるRuby(その２) - hp12c (7ブックマーク)">7 users</a></em></li>
+        <li class="timestamp">2011/08/01</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110801%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110801/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/Watson/"><img src="http://cdn1.www.st-hatena.com/users/Wa/Watson/profile_s.gif" class="profile-image" alt="Watson" title="Watson" width="16" height="16" /></a>
+          <a class="username" href="/Watson/20110801#bookmark-53274910">Watson</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/Watson/ruby">ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/08/01</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110801/p1" class="entry-link" title="1から始めるRuby(その２) - hp12c">1から始めるRuby(その２) - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+        </li>        <li class="users"> <em><a href="/entry/d.hatena.ne.jp/keyesberry/20110801/p1" title="はてなブックマーク - 1から始めるRuby(その２) - hp12c (7ブックマーク)">7 users</a></em></li>
+        <li class="timestamp">2011/08/01</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110801%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110801/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/tech-kazuhisa/"><img src="http://cdn4.www.st-hatena.com/users/te/tech-kazuhisa/profile_s.gif" class="profile-image" alt="tech-kazuhisa" title="tech-kazuhisa" width="16" height="16" /></a>
+          <a class="username" href="/tech-kazuhisa/20110801#bookmark-53274910">tech-kazuhisa</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/tech-kazuhisa/ruby">ruby</a></span>
+          <span class="comment"> このシリーズ面白いな。</span>
+          <span class="timestamp">2011/08/01</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/yowa/"><img src="http://cdn3.www.st-hatena.com/users/yo/yowa/profile_s.gif" class="profile-image" alt="yowa" title="yowa" width="16" height="16" /></a>
+          <a class="username" href="/yowa/20110730#bookmark-52614314">yowa</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/yowa/b">b</a>, <a rel="tag" class="user-tag" href="/yowa/Ruby">Ruby</a></span>
+          <span class="comment"> &gt; つまり1は「ググって」ばかりの私やあなたと同じで問い合わせのたびにただ「クラスってる」だけで、FixnumこそがGoogle同様のスゲー存在なのである</span>
+          <span class="timestamp">2011/07/30</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110725/p1" class="entry-link" title="RubyのメタプログラミングでInterpreterパターンを実装しよう！ - hp12c">RubyのメタプログラミングでInterpreterパターンを実装しよう！ - hp...</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3" rel="tag" class="tag">デザインパターン</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/tips" rel="tag" class="tag">tips</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110725/p1" title="はてなブックマーク - RubyのメタプログラミングでInterpreterパターンを実装しよう！ - hp12c (26ブックマーク)">26 users</a></strong></li>
+        <li class="timestamp">2011/07/25</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110725%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110725/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/kwy/"><img src="http://cdn2.www.st-hatena.com/users/kw/kwy/profile_s.gif" class="profile-image" alt="kwy" title="kwy" width="16" height="16" /></a>
+          <a class="username" href="/kwy/20110730#bookmark-52354826">kwy</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/kwy/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80">あとで読む</a>, <a rel="tag" class="user-tag" href="/kwy/ruby">ruby</a>, <a rel="tag" class="user-tag" href="/kwy/%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3">デザインパターン</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/07/30</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/TMTL/"><img src="http://cdn1.www.st-hatena.com/users/TM/TMTL/profile_s.gif" class="profile-image" alt="TMTL" title="TMTL" width="16" height="16" /></a>
+          <a class="username" href="/TMTL/20110730#bookmark-52614314">TMTL</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/TMTL/Ruby">Ruby</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/07/30</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/dbfireball/"><img src="http://cdn1.www.st-hatena.com/users/db/dbfireball/profile_s.gif" class="profile-image" alt="dbfireball" title="dbfireball" width="16" height="16" /></a>
+          <a class="username" href="/dbfireball/20110729#bookmark-52614314">dbfireball</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/dbfireball/ruby">ruby</a>, <a rel="tag" class="user-tag" href="/dbfireball/%E3%83%8D%E3%82%BF">ネタ</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/07/29</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110622/p1" class="entry-link" title="知って得する21のRubyのトリビアな記法 ~ 21 Trivia Notations you should know in Ruby - hp12c">知って得する21のRubyのトリビアな記法 ~ 21 Trivia Notations you s...</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/ruby" rel="tag" class="tag">ruby</a>
+          <a href="http://b.hatena.ne.jp/t/tips" rel="tag" class="tag">tips</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+          <a href="http://b.hatena.ne.jp/t/%2A%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">*あとで読む</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110622/p1" title="はてなブックマーク - 知って得する21のRubyのトリビアな記法 ~ 21 Trivia Notations you should know in Ruby - hp12c (187ブックマーク)">187 users</a></strong></li>
+        <li class="timestamp">2011/06/22</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110622%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110622/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/sentoh/"><img src="http://cdn2.www.st-hatena.com/users/se/sentoh/profile_s.gif" class="profile-image" alt="sentoh" title="sentoh" width="16" height="16" /></a>
+          <a class="username" href="/sentoh/20110729#bookmark-47950846">sentoh</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/sentoh/ruby">ruby</a>, <a rel="tag" class="user-tag" href="/sentoh/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">プログラミング</a></span>
+          <span class="comment"></span>
+          <span class="timestamp">2011/07/29</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+    <li>
+      <div class="entry-body">
+      <h3 style="background-image:url(http://cdn-ak.favicon.st-hatena.com/?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F)">
+        <a href="http://d.hatena.ne.jp/keyesberry/20110727/p1" class="entry-link" title="1から始めるRuby - hp12c">1から始めるRuby - hp12c</a>
+        
+        
+        <span class="domain"><a class="domain" href="/entrylist?url=http://d.hatena.ne.jp/keyesberry/">d:id:keyesberry</a></span>
+      </h3>
+      <ul class="entry-info">
+        <li class="category"><a href="/hotentry/it" title="PC、インターネット、IT、ケータイ、ウェブデザイン、デジタル、ネットコミュニティ" class="category-link">コンピュータ・IT</a></li>
+        <li class="tags">
+          <a href="http://b.hatena.ne.jp/t/Ruby" rel="tag" class="tag">Ruby</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0" rel="tag" class="tag">プログラミング</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%81%82%E3%81%A8%E3%81%A7%E8%AA%AD%E3%82%80" rel="tag" class="tag">あとで読む</a>
+          <a href="http://b.hatena.ne.jp/t/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB" rel="tag" class="tag">チュートリアル</a>
+          <a href="http://b.hatena.ne.jp/t/programming" rel="tag" class="tag">programming</a>
+        </li>        <li class="users"> <strong><a href="/entry/d.hatena.ne.jp/keyesberry/20110727/p1" title="はてなブックマーク - 1から始めるRuby - hp12c (93ブックマーク)">93 users</a></strong></li>
+        <li class="timestamp">2011/07/27</li>
+        <li class="addbookmark"> <a class="hatena-bookmark-button" href="/my/add.confirm?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F20110727%2Fp1" title="このエントリーをはてなブックマークに追加" data-hatena-bookmark-url="http://d.hatena.ne.jp/keyesberry/20110727/p1" data-hatena-bookmark-layout="simple"><img src="http://cdn-ak.b.st-hatena.com/images/append.gif" width="16" height="12" title="このエントリーをはてなブックマークに追加" alt="このエントリーをはてなブックマークに追加" /></a> </li>
+      </ul>
+      <div class="curvebox-header"><div></div></div>
+      <div class="curvebox-body comment">
+        <ul class="comment">
+          <li>
+          <a href="/sentoh/"><img src="http://cdn2.www.st-hatena.com/users/se/sentoh/profile_s.gif" class="profile-image" alt="sentoh" title="sentoh" width="16" height="16" /></a>
+          <a class="username" href="/sentoh/20110729#bookmark-52614314">sentoh</a>
+          <span class="tags"><a rel="tag" class="user-tag" href="/sentoh/ruby">ruby</a>, <a rel="tag" class="user-tag" href="/sentoh/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0">プログラミング</a></span>
+          <span class="comment">これはおもしろい</span>
+          <span class="timestamp">2011/07/29</span>
+          </li>
+        </ul>
+      </div><div class="curvebox-bottom"><div></div></div>
+      
+      
+      
+      </div>
+    </li>
+
+      </ul>
+      <div class="pager">
+        <a class="pager-next" href="/bookmarklist?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F&amp;of=25">次の25件&gt;</a>
+      </div>
+      <div class="feed">
+        <a class="feed" href="/bookmarklist.rss?url=http%3A%2F%2Fd.hatena.ne.jp%2Fkeyesberry%2F">RSS</a>
+      </div>
+    </div>
+    <div class="curvebox-bottom"><div></div></div>
+  </div>
+</div>
+
+        <script type="text/javascript">Hatena.Bookmark.Browsing.document.checkPageLoad();</script>        <div id="prefooter"></div>
+        </div>
+        <div id="footer">
+          <div class="line">
+            <div class="line4-1">
+              <div class="line-inner">
+                <ul>
+                  <li class="title"><a href="/"><img src="http://cdn-ak.b.st-hatena.com/images/favicon.gif" alt="" /> はてなブックマーク</a></li>
+                  <li><a href="/">トップ</a></li>
+                  <li><a href="/hotentry">人気エントリー</a></li>
+                  <li><a href="/entrylist">新着エントリー</a></li>
+                  <li><a href="/news">ニュース</a></li>
+                  <li><a href="/ranking">ランキング</a> <img src="http://cdn-ak.b.st-hatena.com/images/new.gif" alt="NEW!" /></li>
+                  <li><a href="/video">動画</a></li>
+                  <li><a href="/asin">商品</a></li>
+                  <li><a href="/t">タグ一覧</a></li>
+                  <li><a href="/keyword">キーワード一覧</a></li>
+                  <li><a href="/location">地域別エントリー</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="line4-2">
+              <div class="line-inner">
+                <ul>
+                <li class="title">ようこそ <a href="/keyesberry/"><img src="http://www.st-hatena.com/users/ke/keyesberry/profile_s.gif" class="profile-image" alt="keyesberry" title="keyesberry" width="16" height="16" /> keyesberry </a>さん</li>
+                <li><a href="/keyesberry/">ブックマーク</a></li>
+                <li><a href="/keyesberry/favorite">お気に入り</a></li>
+                <li><a href="/keyesberry/add">追加</a></li>
+                <li><a href="/keyesberry/config">設定</a></li>
+                <li><a href="http://www.hatena.ne.jp/logout?location=http%3A%2F%2Fb.hatena.ne.jp%2Fbookmarklist%3Furl%3Dhttp%253A%252F%252Fd.hatena.ne.jp%252Fkeyesberry%252F%26of%3D0">ログアウト</a></li>
+                </ul>
+              </div>
+            </div>
+<div class="line4-3">
+              <div class="line-inner">
+                <ul>
+                  <li class="title">はてなブックマークについて</li>
+                  <li><a href="http://hatena.g.hatena.ne.jp/hatenabookmark/">はてなブックマーク日記 (お知らせ)</a></li>
+                  <li><a href="/help/faq">よくある質問</a></li>
+                  <li><a href="http://www.hatena.ne.jp/faq/q?c=15">お問い合わせ</a></li>
+                  <li><a href="/help/about">はてなブックマークについて</a></li>
+                  <li><a href="/help/walking">はてなブックマークの歩き方</a></li>
+                  <li><a href="/guide/new">新しい使い方</a></li>
+                  <li><a href="/help">ヘルプ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="line4-4">
+              <div class="line-inner">
+                <dl>
+                  <dt>iPhone <img src="http://cdn-ak.b.st-hatena.com/images/new.gif" alt="NEW!" /></dt>
+                  <dd>
+                  <a href="/touch"><img src="http://cdn-ak.b.st-hatena.com/images/iphone-footer.gif" alt="" style="float:left" /></a>
+                  はてなブックマーク for iPhone リリース!<br />
+                  <a href="/touch">iPhone版はこちらから</a>
+                  </dd>
+                  <dt>モバイル</dt>
+                  <dd>
+                  <div class="line-inner-center" style="text-align: left; margin-bottom: 5px;">
+                  <img src="http://cdn-ak.b.st-hatena.com/images/qrcode.gif" width="60" alt="QR CODE" style="float: left; margin-right: 5px;" />
+                  <a href="/mobile">モバイル版はこちら</a>
+                  </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+            <div class="copyright">Copyright &copy; 2005-2011 <a href="http://www.hatena.ne.jp/">hatena</a>. All Rights Reserved.</div>
+        </div><!-- Google Analytics -->
+<script type="text/javascript">
+__rendering_time = (new Date).getTime() - __rendering_time;
+if (location.hash == '#benchmark')  {
+  document.title = '' + __rendering_time + ' / ' + document.title;
+}
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-20092244-1'],
+    ['_trackPageview'],
+    ['b._setAccount', 'UA-7855606-1'],
+    ['b._setDomainName', '.hatena.ne.jp'],
+    ['b._trackPageview'],
+    ['c._setAccount', 'UA-441387-3'],
+    ['c._trackPageview']
+  );
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">{lang: 'ja'}</script>
+
+
+<script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+<!--
+10.0.48.75 / 14ece682fb48 
+-->
+</body>
+</html>
+

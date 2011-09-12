@@ -9,12 +9,11 @@ class TestBookmarks < Test::Unit::TestCase
     @bm = HateDa::Bookmarks.new(:keyesberry)
   end
 
-  # def test_dataset_with_file
-  #   path = Dir.pwd + '/test'
-  #   @bm.get_dataset([path+'/keyesberry0.html', path+'/keyesberry1539.html'])
-  #   p @bm.stat_by(:marker) { |k, i| i > 0 }
-  #   p @bm.stat_by(:tags) { |k, i| k.include? 'ruby' }
-  # end
+  def test_dataset_with_file
+    path = Dir.pwd + '/test'
+    ds = @bm.get_dataset([path+'/bm0.html', path+'/bm1.html'])
+    p @bm.group_by_top(:marker, 10, ds)
+  end
 
   def test_dataset
     # @bm.clear

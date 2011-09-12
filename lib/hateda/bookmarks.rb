@@ -7,7 +7,8 @@ class HateDa::Bookmarks
   end
 
   def dataset
-    urls = ( 0..total/PER_PAGE() ).map { |page| URL(page) }
+    pages = [total / PER_PAGE(), MAX_PAGES()].min
+    urls = (0..pages).map { |page| URL(page) }
     @dataset ||= get_dataset(urls)
   end
 
@@ -27,6 +28,12 @@ class HateDa::Bookmarks
     STDERR.puts "HTTP Access Error:#{e}"
   rescue Exception => e
     STDERR.puts e
+  end
+
+  def group_by_top(key, top=nil, dataset=@dataset)
+    grouped = dataset.group_by { |h| h[key] }.sort_by { |k, v| -v.size }
+    grouped = grouped.take(top) if top
+    Hash[grouped]
   end
 
   private
@@ -50,6 +57,10 @@ class HateDa::Bookmarks
 
   def PER_PAGE
     20
+  end
+
+  def MAX_PAGES
+    200
   end
 
   def parse(html)
